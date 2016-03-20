@@ -53,7 +53,7 @@ class HighlightManager():
                     continue
 
 
-            if "pattern" in obj:
+            if "pattern" in obj and obj["pattern"]:
                 if "ignore_case" in obj and obj["ignore_case"]:
                     regions = view.find_all(obj["pattern"], sublime.IGNORECASE)
                 else:
